@@ -1,4 +1,6 @@
 Mouse	KEYWORD1
+rotateLeft	KEYWORD2
+rotateRight	KEYWORD2
 compWheelDiff	KEYWORD2
 setSpeed	KEYWORD2
 setAdjust	KEYWORD2

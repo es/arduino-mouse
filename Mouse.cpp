@@ -15,6 +15,16 @@ Mouse::Mouse(int motorLF, int motorLB, int motorRF, int motorRB){
     _motorRB=motorRB;
 }
 
+void Mouse::rotateLeft() {
+    analogWrite(_motorLB, _speed-_compLeftWheel);
+    analogWrite(_motorRF, _speed-_compRightWheel);
+}
+
+void Mouse::rotateRight() {
+    analogWrite(_motorLF, _speed-_compLeftWheel);
+    analogWrite(_motorRB, _speed-_compRightWheel);
+}
+
 void Mouse::compWheelDiff (int leftWheel, int rightWheel){
     _compLeftWheel=leftWheel;
     _compRightWheel=rightWheel;

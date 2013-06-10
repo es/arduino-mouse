@@ -20,8 +20,8 @@ class Mouse
 		void left();
 		void right();
 		void halt();
-		void rotateRight();
-		void rotateLeft();
+		void swingRight();
+		void swingLeft();
 	private:
 		int _speed;
 		int _adjust;
